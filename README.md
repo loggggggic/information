@@ -48,9 +48,11 @@ my_flask_api/
     打开浏览器，访问 http://127.0.0.1:5000
 
 3. **使用 API**：
-    ````
-    - **获取用户信息**：curl http://127.0.0.1:5000/api/users
-    - **添加用户信息**：curl -X POST http://127.0.0.1:5000/api/users -H "Content-Type: application/json" -d '{"name": "张三", "email": "zhangsan@example.com", "phone": "123456789", "address": "中国"}'
+    - **获取用户信息**：
+    `curl http://127.0.0.1:5000/api/users`
+    
+    - **添加用户信息**：
+    `curl -X POST http://127.0.0.1:5000/api/users -H "Content-Type: application/json" -d '{"name": "张三", "email": "zhangsan@example.com", "phone": "123456789", "address": "中国"}'`
 
 
 
