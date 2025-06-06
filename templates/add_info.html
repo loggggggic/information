@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>添加信息</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>添加新信息</h1>
+        <form method="POST">
+            <label for="name">姓名:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">邮箱:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">电话:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="address">地址:</label>
+            <textarea id="address" name="address"></textarea>
+
+            <button type="submit" class="btn">提交</button>
+        </form>
+        <a href="/" class="btn-back">返回首页</a>
+    </div>
+</body>
+</html>
