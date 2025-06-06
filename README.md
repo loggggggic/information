@@ -31,20 +31,24 @@ my_flask_api/
    cd information
 
 2. **创建虚拟环境**:
+   ````
    python -m venv myenv
    source myenv/bin/activate  # 在 Windows 上使用 myenv\Scripts\activate
 
 3. **安装依赖**:
+   ````
    pip install Flask
 
 # 使用
 1. **运行应用**：
+    ````
     python app.py
 
 2. **访问应用**：
     打开浏览器，访问 http://127.0.0.1:5000
 
 3. **使用 API**：
+    ````
     - **获取用户信息**：curl http://127.0.0.1:5000/api/users
     - **添加用户信息**：curl -X POST http://127.0.0.1:5000/api/users -H "Content-Type: application/json" -d '{"name": "张三", "email": "zhangsan@example.com", "phone": "123456789", "address": "中国"}'
 
